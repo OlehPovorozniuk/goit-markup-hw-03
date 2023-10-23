@@ -4,6 +4,9 @@ a {
 ul {
     list-style: none;
 }
+ul{
+    margin: 0;
+}
 body {
     font-family: Roboto, sans-serif;
     background-color: #FFFFFF;
@@ -17,7 +20,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    
+   
 }
 .logo-span{
     color: #2E2F42;
@@ -26,15 +29,18 @@ body {
 .head{
     font-family: Roboto, sans-serif;
 }
+.nav
+{display: block;}
  .nav-list a{
     color: #2E2F42;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em; 
-     
 
 }
+
+
 .nav .nav-list a:hover,
 .nav .nav-list a:focus{
     color: #404BBF;
@@ -59,17 +65,27 @@ body {
 .address a:focus{
     color: #404BBF;
 }
+.container{
+    width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
 
 .hero{
 background-color: #2E2F42;
+text-align: center;
 }
 .title-hero{
+    margin-top: 0;
+    margin-bottom: 48px;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
+   
     
 }
 
@@ -81,6 +97,8 @@ background-color: #2E2F42;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .hero .hero-button:hover,
@@ -94,13 +112,23 @@ background-color: #2E2F42;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    
 }
+
 .pros .text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 0;
 }
+.container-pros{
+    width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid tan;
+}
+
 .team{
     background-color:#F4F4FD ;
 }
@@ -115,6 +143,7 @@ background-color: #2E2F42;
  letter-spacing: 0.02em;
 text-align: center;
 text-transform: capitalize;
+margin-top: 0;
 }
 .team .team-title{
     color: #2E2F42;
@@ -129,7 +158,11 @@ text-transform: capitalize;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    
+}
+.container-team{
+    margin:0 auto;
+    width: 1128px;
+    outline: 2px solid tomato;
 }
 .portfolio{
     background-color: #FFFFFF;
