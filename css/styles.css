@@ -1,12 +1,15 @@
 a {
     text-decoration: none;
 }
-ul {
+ul  {
     list-style: none;
-}
-ul{
     margin: 0;
+    padding-left: 0;
 }
+img{
+    display: block;
+}
+
 body {
     font-family: Roboto, sans-serif;
     background-color: #FFFFFF;
@@ -20,6 +23,9 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
+    
+
    
 }
 .logo-span{
@@ -29,26 +35,36 @@ body {
 .head{
     font-family: Roboto, sans-serif;
 }
-.nav
-{display: block;}
- .nav-list a{
+
+ .nav-list .link{
     color: #2E2F42;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em; 
-
+    
+     
 }
+
 
 
 .nav .nav-list a:hover,
 .nav .nav-list a:focus{
     color: #404BBF;
 }
-.nav .nav-list a:active{
+.nav .nav-list link:active{
     color: #404BBF;
     text-decoration: underline;
 }
+.nav{
+    display: flex;
+}
+.nav-list{
+    display: flex;
+    gap: 40px;
+
+}
+
 .address {
     font-style: normal;
 }
@@ -58,18 +74,36 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+   margin-left: auto;
+
+}
+.nav-address{
+    display: flex;
+    gap: 40px;
 }
 
 
-.address a:hover,
-.address a:focus{
+.address link:hover,
+.address link:focus{
     color: #404BBF;
 }
 .container{
-    width: 1128px;
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 15px;
     
+    
+}
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.container-header{
+height: 72px;
+display:flex ;
+align-items: center;
+justify-content: space-between;
 }
 
 
@@ -85,6 +119,7 @@ text-align: center;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    padding-top: 188px;
    
     
 }
@@ -99,6 +134,9 @@ text-align: center;
     cursor: pointer;
     padding: 16px 32px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 188px;
+    border: none;
+    border-radius: 4px;
 }
 
 .hero .hero-button:hover,
@@ -112,21 +150,27 @@ text-align: center;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    
     
 }
+
 
 .pros .text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 0;
     margin-bottom: 0;
+    
+    
 }
-.container-pros{
-    width: 1128px;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 2px solid tan;
+
+.pros-list{
+    display: flex;
+    gap: 24px;
 }
 
 .team{
@@ -134,6 +178,7 @@ text-align: center;
 }
 .team-list{
     background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
 }
 .team .title{
     color: #2E2F42;
@@ -144,6 +189,8 @@ text-align: center;
 text-align: center;
 text-transform: capitalize;
 margin-top: 0;
+margin-bottom: 0;
+padding-bottom: 72px;
 }
 .team .team-title{
     color: #2E2F42;
@@ -151,6 +198,8 @@ margin-top: 0;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 32px;
+    margin-bottom: 8px;
    
 }
 .team .team-text{
@@ -158,12 +207,16 @@ margin-top: 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 0;
+    margin-bottom: 32px;
 }
-.container-team{
-    margin:0 auto;
-    width: 1128px;
-    outline: 2px solid tomato;
+.team-ul{
+    text-align: center;
+    display: flex;
+    gap:24px
+
 }
+
 .portfolio{
     background-color: #FFFFFF;
 }
@@ -175,6 +228,10 @@ margin-top: 0;
     text-align: center;
     letter-spacing: 0.02;
     text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 .portfolio .sec-title{
     color: #2E2F42;
@@ -182,6 +239,7 @@ margin-top: 0;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    
 }
 
 .portfolio .text{
@@ -189,6 +247,24 @@ margin-top: 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 0;
+}
+.container-portfolio{
+    
+   
+   
+}
+.portfolio-ul{
+    display: flex;
+flex-wrap: wrap;
+column-gap: 24px;
+row-gap: 48px;
+
+
+}
+
+.portfolio-li{
+    width: calc((100% - 48px) / 3);
 }
 .footer {
     background-color: #2E2F42;
@@ -201,6 +277,9 @@ margin-top: 0;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    padding-top: 100px;
+    margin-bottom: 18px;
     
 }
 .footer .logo-span{
@@ -212,4 +291,12 @@ margin-top: 0;
     line-height: 1.5;
     color: #F4F4FD;
     letter-spacing: 0.02em;
+    margin-bottom: 0;
+    margin-top:0;
+    padding-bottom: 100px;
+    
+}
+.container-footer{
+    width: 1158px;
+    margin: 0 auto;
 }
