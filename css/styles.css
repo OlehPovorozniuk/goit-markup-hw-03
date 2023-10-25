@@ -25,6 +25,7 @@ body {
     text-transform: uppercase;
     margin-right: 76px;
     
+    
 
    
 }
@@ -34,6 +35,8 @@ body {
 
 .head{
     font-family: Roboto, sans-serif;
+    border-bottom: 1px solid #e7e9fc;
+   
 }
 
  .nav-list .link{
@@ -58,6 +61,9 @@ body {
 }
 .nav{
     display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+    padding-top: 24px;
 }
 .nav-list{
     display: flex;
@@ -110,6 +116,8 @@ justify-content: space-between;
 .hero{
 background-color: #2E2F42;
 text-align: center;
+
+padding: 0;
 }
 .title-hero{
     margin-top: 0;
@@ -120,6 +128,10 @@ text-align: center;
     line-height: 1.07;
     letter-spacing: 0.02em;
     padding-top: 188px;
+    max-width: 496px;
+   margin-right: auto;
+   margin-left: auto;
+   
    
     
 }
@@ -134,9 +146,11 @@ text-align: center;
     cursor: pointer;
     padding: 16px 32px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    margin-bottom: 188px;
+    
     border: none;
     border-radius: 4px;
+    min-width: 169px;
+    margin-bottom: 188px;
 }
 
 .hero .hero-button:hover,
@@ -175,6 +189,9 @@ text-align: center;
 
 .team{
     background-color:#F4F4FD ;
+}
+.title{
+    visibility: hidden;
 }
 .team-list{
     background-color: #FFFFFF;
