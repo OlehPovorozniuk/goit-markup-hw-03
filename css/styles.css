@@ -62,7 +62,7 @@ body {
 .nav{
     display: flex;
     align-items: center;
-    padding: 24px 0;
+  
    
 }
 .nav-list{
@@ -86,7 +86,7 @@ body {
 .nav-address{
     display: flex;
     gap: 40px;
-    padding: 24px 0;
+    
 }
 
 
@@ -111,6 +111,7 @@ height: 72px;
 display:flex ;
 align-items: center;
 justify-content: space-between;
+padding: 24px 0;
 }
 
 
@@ -185,6 +186,9 @@ padding:188px 0;
     display: flex;
     gap: 24px;
    
+}
+.pros-li{
+    width: calc((100% - 72px) / 4);
 }
 .visually-hidden {
     position: absolute;
