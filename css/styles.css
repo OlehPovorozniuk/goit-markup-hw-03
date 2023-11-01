@@ -90,6 +90,9 @@ body {
     gap: 40px;
     
 }
+.nav-address .infor{
+    padding: 24px 0;
+}
 
 
 .address link:hover,
@@ -112,8 +115,7 @@ height: 72px;
 display:flex ;
 align-items: center;
 justify-content: space-between;
-padding-top: 24px;
-padding-bottom: 24px ;
+
 }
 
 
