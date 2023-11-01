@@ -99,8 +99,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
-    
-    
+       
 }
 .section{
     padding-top: 120px;
@@ -111,7 +110,7 @@ height: 72px;
 display:flex ;
 align-items: center;
 justify-content: space-between;
-padding: 24px 0;
+padding: 24px 15px;
 }
 
 
